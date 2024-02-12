@@ -24,9 +24,10 @@ well as a left and a right subtree. To well-found this recursive
 definition, a binary tree can also be empty. Defined in this way, binary
 trees resemble lists, but with two "tails".
 
-We'll use the definition of polymorphic binary trees from the textbook,
-annotated here to clarify the arguments of the `Node` value constructor:
-*)
+We'll use the definition of polymorphic binary trees from the
+textbook, reproduced and annotated here to clarify the arguments of
+the `Node` value constructor:
+ *)
 
 type 'a bintree =
   | Empty
@@ -57,8 +58,8 @@ invariant:
     stored at the node.
     ....................................................................
 
-(For our purposes, we'll take "less than" to correspond to the `<`
-operator.)
+(For our purposes, we'll take "less than" to correspond to OCaml's
+polymorphic `<` operator.)
 
 For example, the following integer binary tree is a binary search
 tree:
@@ -101,10 +102,11 @@ let example2 =
 
 (* Binary search trees are useful because, as indicated by the name,
 searching for a value in a binary search tree is especially efficient.
-Rather than needing to search for a value throughout the whole tree, the
-value stored at a node tells you determinately whether to search in the
-left or the right subtree. Other functionality, like finding the minimum
-or maximum value, are especially efficient in binary search trees. *)
+Rather than needing to search for a value throughout the whole tree,
+the value stored at a node tells you determinately whether to search
+in the left or the right subtree. Other functionality, like finding
+the minimum or maximum value, are also especially efficient in binary
+search trees. *)
   
 (*......................................................................
 Exercise 8: Define a function `find_bst` for binary search trees, such
