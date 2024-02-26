@@ -23,7 +23,7 @@ In this lab you'll continue to use algebraic data types to create
 several data structures.
 
 First, you'll complete instructive examples on variant types and
-enforcing invariants to model residences in Camlville. Then, you'll
+enforcing invariants to mdel residences in Camlville. Then, you'll
 revisit an example from the reading to implement a polymorphic list as
 an algebraic data type. Building on the reading, we'll add some more
 functionality to this type.
